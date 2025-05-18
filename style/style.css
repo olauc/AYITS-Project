@@ -125,15 +125,15 @@ canvas {
 }
 
 #particles-js {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 0;
-  top: 167px;
-  background-image: url("");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+    width: 77%;
+    height: 50%;
+    right: 138px;
+    position: relative;
+    z-index: 0;
+    top: 173px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 .hero-section {
   background-color: var(--color-background);
@@ -341,10 +341,6 @@ canvas {
   color: var(--color-text);
 }
 
-.ola {
-  height: auto;
-  margin: auto;
-}
 
 .coustem-change {
   height: auto;
@@ -450,36 +446,48 @@ canvas {
   border-radius: 15px;
   overflow: hidden;
   position: relative;
+  border: 1px solid var(--color-primary);
 }
 
-.news-card img {
-  border-radius: 35px;
-  height: 220px;
+.news-image {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  height: 351px;
+  width: 403px;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  transition: transform 0.8s ease-out;
+  transition: transform 0.2s ease-in-out;
+  display: block;
 }
 
-.news-card:hover img {
-  transform: scale(1.08);
+.news-image:hover img {
+  transform: scale(1.3);
 }
 
-.news-card::after {
+.news-image::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 230px;
+  height: 100%;
   background-color: rgba(0, 128, 96, 0.4);
   opacity: 0;
-  transition: opacity 0.8s ease-out;
-  border-radius: 17px;
+  transition: opacity 0.2s ease-out;
+  border-radius: 15px;
+  z-index: 2;
   pointer-events: none;
 }
 
-.news-card:hover::after {
+.news-image:hover::after {
   opacity: 1;
 }
+
 
 .news-card h5 {
   font-weight: bold;
@@ -699,8 +707,9 @@ canvas {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  transition: transform 0.8s ease-out;
+  transition: transform 0.5s ease-out;
   object-fit: cover;
+
 }
 
 .speaker-img-container {
@@ -722,13 +731,13 @@ canvas {
   height: 100%;
   background-color: rgba(0, 128, 96, 0.4);
   opacity: 0;
-  transition: opacity 0.8s ease-out;
+  transition: opacity 0.5s ease-out;
   border-radius: 50%;
   pointer-events: none;
 }
 
-.speaker-img-container:hover .speaker-img {
-  transform: scale(1.08);
+.speaker-img-container .speaker-img:hover  {
+  transform: scale(1.3);
 }
 
 .speaker-img-container:hover::after {
@@ -860,6 +869,32 @@ canvas {
   .events {
     font-size: large !important;
   }
+
+  .speaker-img {
+    transition: none !important;
+  }
+  .speaker-img-container::after {
+    transition: none !important;
+    background-color: revert-layer !important;
+
+  }
+   .speaker-img-container:hover .speaker-img {
+      transform: none !important;
+    }
+
+ .coustem-change .swiper-slide img{
+    max-width: 200px !important;
+     max-height: 200px;
+   }
+
+
+.coustem-change .swiper-button-prev{
+     border-left: 12px solid #ffffff;
+}
+
+.coustem-change .swiper-button-next{
+     border-right: 12px solid #ffffff;
+}
 }
 
 @media (max-width: 400px) {

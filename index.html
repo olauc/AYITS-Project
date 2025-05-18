@@ -23,8 +23,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./style/style.css" />
     <title></title>
@@ -155,7 +157,10 @@
       </div>
 
       <div class="content">
-        <div class="container text-center py-5 margin-talk" id="speakers">
+        <div
+          class="container d-none d-md-block text-center py-5 margin-talk"
+          id="speakers"
+        >
           <h2 class="mb-5 text-dark">المتحدثين</h2>
           <div class="row justify-content-center" style="gap: 48px">
             <div class="col-6 col-md-3 col-xl-2">
@@ -172,7 +177,7 @@
             <div class="col-6 col-md-3 col-xl-2">
               <div class="speaker-img-container">
                 <img
-                  src="./image/image 1.svg"
+                  src="./image/Group 25.svg"
                   alt="هناء العتيبي"
                   class="speaker-img"
                 />
@@ -183,7 +188,7 @@
             <div class="col-6 col-md-3 col-xl-2">
               <div class="speaker-img-container">
                 <img
-                  src="./image/image 1.svg"
+                  src="./image/Group 26.svg"
                   alt="محمد صالح"
                   class="speaker-img"
                 />
@@ -194,7 +199,7 @@
             <div class="col-6 col-md-3 col-xl-2">
               <div class="speaker-img-container">
                 <img
-                  src="./image/image 1.svg"
+                  src="./image/Group 1000006309.svg"
                   alt="محمد صالح"
                   class="speaker-img"
                 />
@@ -205,7 +210,7 @@
             <div class="col-6 col-md-3 col-xl-2">
               <div class="speaker-img-container">
                 <img
-                  src="./image/image 1.svg"
+                  src="./image/Component 68.svg"
                   alt="محمد صالح"
                   class="speaker-img"
                 />
@@ -215,8 +220,82 @@
             </div>
           </div>
         </div>
+        <div
+          class="container text-center py-5 margin-talk d-block d-md-none"
+          id="speakers"
+        >
+          <h2 class="mb-5 text-dark">المتحدثين</h2>
 
-        <div class="container-fluid coustem-change mt-5">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide d-flex flex-column">
+                <div class="speaker-img-container">
+                  <img
+                    src="./image/image 1.svg"
+                    alt="سارة العمري"
+                    class="speaker-img img-fluid"
+                  />
+                </div>
+                <div class="speaker-name mt-2">سارة العمري</div>
+                <div class="speaker-title">مستشار تقني – الذكاء الاصطناعي</div>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column">
+                <div class="speaker-img-container">
+                  <img
+                    src="./image/image 1.svg"
+                    alt="هناء العتيبي"
+                    class="speaker-img img-fluid"
+                  />
+                </div>
+                <div class="speaker-name mt-2">هناء العتيبي</div>
+                <div class="speaker-title">مستشارة تطوير المحتوى البرمجي</div>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column">
+                <div class="speaker-img-container">
+                  <img
+                    src="./image/image 1.svg"
+                    alt="محمد صالح"
+                    class="speaker-img img-fluid"
+                  />
+                </div>
+                <div class="speaker-name mt-2">محمد صالح</div>
+                <div class="speaker-title">مستشار تقني – الذكاء الاصطناعي</div>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column">
+                <div class="speaker-img-container">
+                  <img
+                    src="./image/image 1.svg"
+                    alt="محمد صالح"
+                    class="speaker-img img-fluid"
+                  />
+                </div>
+                <div class="speaker-name mt-2">محمد صالح</div>
+                <div class="speaker-title">مستشار تقني – الذكاء الاصطناعي</div>
+              </div>
+
+              <div class="swiper-slide d-flex flex-column">
+                <div class="speaker-img-container">
+                  <img
+                    src="./image/image 1.svg"
+                    alt="محمد صالح"
+                    class="speaker-img img-fluid"
+                  />
+                </div>
+                <div class="speaker-name mt-2">محمد صالح</div>
+                <div class="speaker-title">مستشار تقني – الذكاء الاصطناعي</div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination mt-4"></div>
+          </div>
+        </div>
+
+        <div class="container-fluid d-none d-md-block coustem-change mt-5">
           <div class="row">
             <div class="col-12">
               <h2 class="mb-5">شركاؤنا في التغيير</h2>
@@ -227,14 +306,68 @@
             <div class="col-sm-12 col-md-6 col-xl-3 mt-3 coustom-col">
               <img src="./image/coderz.svg" class="rounded-circle" alt="" />
             </div>
-            <div class="col-sm-12 col-md-6 mt-md-4 col-xl-3 mt-xl-3 mt-sm-3 coustom-col">
+            <div
+              class="col-sm-12 col-md-6 mt-md-4 col-xl-3 mt-xl-3 mt-sm-3 coustom-col"
+            >
               <img src="./image/gov.svg" class="rounded-circle" alt="" />
             </div>
-            <div class="col-sm-12 col-md-6 mt-md-4 col-xl-3 mt-xl-3 mt-sm-3 coustom-col">
+            <div
+              class="col-sm-12 col-md-6 mt-md-4 col-xl-3 mt-xl-3 mt-sm-3 coustom-col"
+            >
               <img src="./image/ministry.svg" class="rounded-circle" alt="" />
             </div>
             <div class="col-12">
               <a href="#" class="btn btn-custom mt-4">كن شريك</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid coustem-change mt-5 d-md-none d-block">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="mb-5 text-center">شركاؤنا في التغيير</h2>
+            </div>
+            <div class="col-12">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="./image/logo4.svg"
+                      class="rounded-circle img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./image/coderz.svg"
+                      class="rounded-circle img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./image/gov.svg"
+                      class="rounded-circle img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./image/ministry.svg"
+                      class="rounded-circle img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-12 text-center">
+              <a href="#" class="btn btn-custom mt-3">كن شريك</a>
             </div>
           </div>
         </div>
@@ -385,11 +518,15 @@
             <div class="row justify-content-center">
               <div class="col-md-4 mb-4">
                 <div class="news-card">
-                  <img
+                  <div class="news-image">
+                      <img
                     src="./image/news.svg"
                     alt="خبر 1"
-                    class="img-fluid w-100"
+                    class="img-fluid w-100 zoom-img"
                   />
+                    
+                  </div>
+                
                   <h5>مواعيد جديدة وفعاليات مضافة</h5>
                   <p>
                     اطلع على أي تغييرات في جدول البرنامج أو إضافة فعاليات خاصة
@@ -399,11 +536,15 @@
 
               <div class="col-md-4 mb-4">
                 <div class="news-card">
-                  <img
-                    src="./image/Component 78.svg"
-                    alt="خبر 2"
-                    class="img-fluid w-100"
+                  <div class="news-image">
+                      <img
+                    src="./image/news.svg"
+                    alt="خبر 1"
+                    class="img-fluid w-100 zoom-img"
                   />
+                    
+                  </div>
+                
                   <h5>مواعيد جديدة وفعاليات مضافة</h5>
                   <p>
                     اطلع على أي تغييرات في جدول البرنامج أو إضافة فعاليات خاصة
@@ -413,11 +554,15 @@
 
               <div class="col-md-4 mb-4">
                 <div class="news-card">
-                  <img
-                    src="./image/Rectangle 2539.svg"
-                    alt="خبر 3"
-                    class="img-fluid w-100"
+                  <div class="news-image">
+                      <img
+                    src="./image/news.svg"
+                    alt="خبر 1"
+                    class="img-fluid w-100 zoom-img"
                   />
+                    
+                  </div>
+                
                   <h5>مواعيد جديدة وفعاليات مضافة</h5>
                   <p>
                     اطلع على أي تغييرات في جدول البرنامج أو إضافة فعاليات خاصة
@@ -501,6 +646,5 @@
     ></script>
 
     <script src="/js/index.js"></script>
-    
   </body>
 </html>
