@@ -824,6 +824,11 @@ canvas {
   .time-number {
     font-size: 80px;
   }
+
+  .news-image img{
+    width: 83%;
+    border-radius: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -895,6 +900,13 @@ canvas {
 .coustem-change .swiper-button-next{
      border-right: 12px solid #ffffff;
 }
+
+.news-image img{
+      width: 90% !important;
+    border-radius: 20px;
+}
+
+
 }
 
 @media (max-width: 400px) {
